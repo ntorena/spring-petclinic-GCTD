@@ -26,7 +26,13 @@ public class OwnerForm {
 
 	private static final String BTN_ADD_OWNER = "css:#add-owner-form button";
 
+	private static final String BTN_EDIT_OWNER = "css:#edit-owner-form button";
+
+	private static final String BTN_UPDATE_OWNER = "xpath://*[@id='add-owner-form']/div[2]/div/button";
+
 	private static final String FIELD_ERROR_MESSAGE = "xpath://input[@id='%s']/../../span[@class='help-inline']";
+
+	private static final String SUCCESS_MESSAGE = "id:success-message";
 
 	private final Browser browser;
 
@@ -59,8 +65,20 @@ public class OwnerForm {
 		this.browser.click(BTN_ADD_OWNER);
 	}
 
+	public void editOwner() {
+		this.browser.click(BTN_EDIT_OWNER);
+	}
+
+	public void updateOwner() {
+		this.browser.clic(BTN_UPDATE_OWNER);
+	}
+
 	public String getFieldErrorMessage(String field) {
 		return this.browser.text(FIELD_ERROR_MESSAGE, labelToId(field));
+	}
+
+	public String getSuccessMessage() {
+		return this.browser.text(SUCCESS_MESSAGE)
 	}
 
 	public void checkFieldErrorMessage(String field, String expected) {

@@ -137,6 +137,21 @@ public class OwnerSteps {
 		site.ownerList.findOwner();
 	}
 
+	@When("el veterinario hace click en el botón Edit Owner")
+	public void editOwner() {
+		site.ownerList.editOwner();
+	}
+
+	@Then("el veterinario hace click en el botón Update Owner")
+	public void updateOwner() {
+		site.ownerList.updateOwner();
+	}
+
+	@Then("el sistema deberia mostrar un mensaje de exito {string}")
+	public void checkSuccessMessage(String successMessage) {
+		site.ownerDetails.checkSuccessMessage(successMessage);
+	}
+
 	@Then("el sistema debería dirigir a la pantalla de detalles del dueño de mascota")
 	public void owmerInfoCheckTitle() {
 		site.navBar.checkTitle(OWNER_DETAILS_TITLE);
