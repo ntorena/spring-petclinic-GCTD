@@ -70,7 +70,7 @@ public class OwnerForm {
 	}
 
 	public void updateOwner() {
-		this.browser.clic(BTN_UPDATE_OWNER);
+		this.browser.click(BTN_UPDATE_OWNER);
 	}
 
 	public String getFieldErrorMessage(String field) {
