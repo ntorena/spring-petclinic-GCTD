@@ -78,7 +78,7 @@ public class OwnerForm {
 	}
 
 	public String getSuccessMessage() {
-		return this.browser.text(SUCCESS_MESSAGE)
+		return this.browser.text(SUCCESS_MESSAGE);
 	}
 
 	public void checkFieldErrorMessage(String field, String expected) {
