@@ -142,7 +142,7 @@ public class OwnerSteps {
 		site.ownerForm.editOwner();
 	}
 
-	@When("el veterinario borrar el contenido del campo")
+	@When("el veterinario borrar el contenido del campo Telephone")
 	public void clearField() {
 		site.ownerForm.clearTelephone();
 	}
