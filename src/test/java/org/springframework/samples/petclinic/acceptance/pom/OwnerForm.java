@@ -26,7 +26,7 @@ public class OwnerForm {
 
 	private static final String BTN_ADD_OWNER = "css:#add-owner-form button";
 
-	private static final String BTN_EDIT_OWNER = "css:#edit-owner-form button";
+	private static final String BTN_EDIT_OWNER = "xpath:/html/body/div/div/a[1]";
 
 	private static final String BTN_UPDATE_OWNER = "xpath://*[@id='add-owner-form']/div[2]/div/button";
 
