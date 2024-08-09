@@ -142,6 +142,11 @@ public class OwnerSteps {
 		site.ownerForm.editOwner();
 	}
 
+	@When("el veterinario borrar el contenido del campo")
+	public void clearField() {
+		site.ownerForm.clearTelephone();
+	}
+
 	@Then("el veterinario hace click en el botón Update Owner")
 	public void updateOwner() {
 		site.ownerForm.updateOwner();

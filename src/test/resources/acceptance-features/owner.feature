@@ -54,9 +54,10 @@ Feature: Registro de Dueños de Mascotas
     And el veterinario hace clic en el botón Find Owner
     When el veterinario hace click en el botón Edit Owner
     And el veterinario ingresa "<City>" en el campo City
+    And el veterinario borrar el contenido del campo Telephone
     And el veterinario ingresa "<Telephone>" en el campo Telephone
     Then el veterinario hace click en el botón Update Owner
-    And el sistema deberia mostrar un mensaje de exito "<Message>"
+    And el sistema debería mostrar el mensaje "<Message>" y los datos del dueño agregado
 
   Examples:
       | Last Name   | City        | Telephone  | Message              |

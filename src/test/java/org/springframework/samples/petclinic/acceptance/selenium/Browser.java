@@ -313,4 +313,16 @@ public class Browser {
 		}
 	}
 
+	/**
+	 * Realiza clear en el elemento ubicado con selector
+	 * @param selector Selector de tipo id, css o xpath
+	 * @param params Valores a usar en la interpolación
+	 * @return void
+	 * @throws IllegalStateException si selector no indica el tipo
+	 * @throws IllegalStateException si el tipo de selector no está soportado
+	 */
+	public void clearField(String selector, Object... params) {
+		find(selector, params).clear();
+	}
+
 }

@@ -61,6 +61,10 @@ public class OwnerForm {
 		this.browser.write(FIELD_TELEPHONE, value);
 	}
 
+	public void clearTelephone() {
+		this.browser.clearField(FIELD_TELEPHONE);
+	}
+
 	public void addOwner() {
 		this.browser.click(BTN_ADD_OWNER);
 	}
